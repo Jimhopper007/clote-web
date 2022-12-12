@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 2.0</title>
+  </head>
+  <body>
+    <h2>form</h2>
+    <form action="https://www.google.com/search">
+      <label for="id">gooogle:</label>
+      <input type="text" name="q" id="id" placeholder="search" />
+      <button>serach</button>
+    </form>
+    <form action="https://www.reddit.com/search">
+      <label for="zz">reddit:</label>
+      <input type="text" id="zz" name="q" placeholder="reddit" />
+      <button>reddit</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+      <label for="yy">youtube:</label>
+      <input type="text" id="yy" name="search_query" placeholder="youtube" />
+      <button>youtube</button>
+    </form>
+    <h2>checkbox form</h2>
+    <form action="jjfld">
+      <!--kuch bhi id ho sakti hai-->
+      <label for="kuch bhi">chekcbox</label>
+      <!-- name attribute is used to save the data in the server with the data in input like (last name should be specified)-->
+
+      <input type="checkbox" id="kuch bhi" name="agree" checked />
+      <p>
+        <label for="xl">xl</label>
+        <input type="radio" name="size" id="xl" value="xl" />
+        <label for="l">l</label>
+        <input type="radio" name="size" id="l" value="l" />
+        <label for="s">s</label>
+        <input type="radio" name="size" id="s" value="s" />
+      </p>
+      <p>
+        <label for="meal">select food</label>
+        <select id="meal" name="meal">
+          <option value="select" selected>please select the option</option>
+          <!-- <option value="veg">veg</option> -->
+          <option value="j veg">jain veg</option>
+          <option value="p thali">punjabi thali</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="chesse">chesse</label>
+        <input
+          type="range"
+          step="5"
+          name="chesse level"
+          id="chesse"
+          min="1"
+          max="20"
+        />
+      </p>
+      <label for="choice">choose the flavor:</label>
+      <input list="flavors" id="choice" name="choice" />
+      <datalist id="flavors">
+        <option value="cheese"></option>
+        <option value="milk"></option>
+        <option value="salty"></option>
+      </datalist>
+    </form>
+    <button>submit</button>
+    <br />
+    <hr />
+    <a href="chicken.html">go home</a><br />
+    <a href="reg form.html"> registration form</a>
+  </body>
+</html>
